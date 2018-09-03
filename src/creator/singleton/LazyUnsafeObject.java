@@ -11,4 +11,8 @@ public class LazyUnsafeObject{
         return instance;
     }
 
+    public LazyUnsafeObject() {
+
+
+    }
 }
