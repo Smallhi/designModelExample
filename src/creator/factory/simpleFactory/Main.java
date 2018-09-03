@@ -1,3 +1,5 @@
+package creator.factory.simpleFactory;
+
 import creator.factory.simpleFactory.Car;
 import creator.factory.simpleFactory.CarFactory;
 

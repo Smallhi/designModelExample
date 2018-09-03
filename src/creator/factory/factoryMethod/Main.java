@@ -14,4 +14,5 @@ public class Main {
         // 只能访问到接口类型的属性,实际上是因为工厂的create 返回是create 类型，new的BWM和Bens被强制转换了
         ((BMW) car).driveBmw();
     }
+
 }
