@@ -1,8 +1,4 @@
 package creator.prototype;
-
-import com.sun.xml.internal.messaging.saaj.util.ByteInputStream;
-
-import javax.imageio.IIOException;
 import java.io.*;
 
 public abstract class Shape implements  Cloneable, Serializable {
