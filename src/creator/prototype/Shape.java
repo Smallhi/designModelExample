@@ -56,11 +56,11 @@ public abstract class Shape implements  Cloneable, Serializable {
         return null;
     }
 
-    /** 序列化过程
+    /** -序列化
      *  Object---------->ObjectOutputStream(baos)---writeObject()---->ByteArrayOutputStream
      *                                                                  |
-     *                                                                  |
-     *  Object---------->ObjectInputStream(bais)---readObject()<------ ByteArrayInputStream
+     *  -反序列化                                                        |
+     *  Object<----------ObjectInputStream(bais)---readObject()<-----ByteArrayInputStream
      *
      *  注：在对象序列化和反序列化时，都要指明数据流时什么。输出到哪里，从哪里输入，这里使用的内存流，
      *  new ObjectOutputStream(new ByteArrayOutputStream()); 创建一个使用内存流进行对象序列化之后临时存储
